@@ -1,0 +1,80 @@
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = lør 11 jan 2014 00:26:32 CET
+
+BeginCmp
+TimeStamp = /51D5D6C3;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D5D65F;
+Reference = Q1;
+ValeurCmp = BC557;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D5D736;
+Reference = Q2;
+ValeurCmp = BC547;
+IdModule  = TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /51FBDAA4;
+Reference = Q3;
+ValeurCmp = BC547;
+IdModule  = TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D5D637;
+Reference = R1;
+ValeurCmp = 39k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D5D6E0;
+Reference = R2;
+ValeurCmp = 220;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /51FBDA21;
+Reference = R3;
+ValeurCmp = 1M8;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52CEFDF5;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51FBDAB3;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D5D727;
+Reference = RXLED1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /51D5D6F4;
+Reference = TXLED1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+EndListe

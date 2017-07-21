@@ -1,0 +1,158 @@
+# EESchema Netlist Version 1.1 created  tor 16 jan 2014 21:03:49 CET
+(
+ ( /52CEFDF5 $noname  R4 10k {Lib=R}
+  (    1 N-000002 )
+  (    2 +3.3V )
+ )
+ ( /51FBDAB3 $noname  R5 10k {Lib=R}
+  (    1 RX )
+  (    2 +3.3V )
+ )
+ ( /51FBDAA4 TO92  Q3 BC547 {Lib=BC547}
+  (    1 RX )
+  (    2 N-000001 )
+  (    3 GND )
+ )
+ ( /51FBDA21 $noname  R3 15k {Lib=R}
+  (    1 GND )
+  (    2 N-000010 )
+ )
+ ( /51D5D736 TO92  Q2 BC547 {Lib=BC547}
+  (    1 N-000002 )
+  (    2 N-000010 )
+  (    3 N-000001 )
+ )
+ ( /51D5D727 $noname  RXLED1 LED {Lib=LED}
+  (    1 N-000010 )
+  (    2 TX )
+ )
+ ( /51D5D6F4 $noname  TXLED1 LED {Lib=LED}
+  (    1 N-000008 )
+  (    2 GND )
+ )
+ ( /51D5D6E0 $noname  R2 220 {Lib=R}
+  (    1 N-000007 )
+  (    2 N-000008 )
+ )
+ ( /51D5D6C3 $noname  P1 CONN_4 {Lib=CONN_4}
+  (    1 RX )
+  (    2 TX )
+  (    3 +3.3V )
+  (    4 GND )
+ )
+ ( /51D5D65F TO92  Q1 BC557 {Lib=BC557}
+  (    1 N-000007 )
+  (    2 N-000005 )
+  (    3 +3.3V )
+ )
+ ( /51D5D637 $noname  R1 39k {Lib=R}
+  (    1 TX )
+  (    2 N-000005 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component Q3
+ TO92*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component Q2
+ TO92*
+$endlist
+$component RXLED1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component TXLED1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component Q1
+ TO92*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ Q3 2
+ Q2 3
+Net 2 "" ""
+ R4 1
+ Q2 1
+Net 3 "GND" "GND"
+ TXLED1 2
+ P1 4
+ Q3 3
+ R3 1
+Net 4 "TX" "TX"
+ R1 1
+ RXLED1 2
+ P1 2
+Net 5 "" ""
+ Q1 2
+ R1 2
+Net 6 "+3.3V" "+3.3V"
+ R5 2
+ R4 2
+ P1 3
+ Q1 3
+Net 7 "" ""
+ Q1 1
+ R2 1
+Net 8 "" ""
+ R2 2
+ TXLED1 1
+Net 9 "RX" "RX"
+ Q3 1
+ P1 1
+ R5 1
+Net 10 "" ""
+ R3 2
+ Q2 2
+ RXLED1 1
+}
+#End
