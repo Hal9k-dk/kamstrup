@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:kamstrup-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kamstrup-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title "Kamstrup IR-head"
+Date "20 Jul 2017"
+Rev "2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 3900 1500 0    60   ~ 0
+Echo cancellation:\nTX is high when inactive,\nso only let the LED \nreceive when TX is high.
+Wire Wire Line
+	5650 2150 5650 2200
+Connection ~ 6050 2350
+Wire Wire Line
+	6050 2350 6350 2350
+Wire Wire Line
+	6050 1550 6050 1650
+Wire Wire Line
+	5750 2700 5650 2700
+Wire Wire Line
+	5650 2700 5650 2600
+Wire Wire Line
+	5100 2950 5100 3100
+Wire Wire Line
+	1650 3500 1450 3500
+Wire Wire Line
+	1800 3350 1800 3300
+Wire Wire Line
+	1800 3300 1450 3300
+Wire Wire Line
+	2650 2650 2650 2700
+Wire Wire Line
+	2350 1900 2200 1900
+Wire Wire Line
+	2650 1700 2650 1500
+Wire Wire Line
+	2650 2150 2650 2100
+Wire Wire Line
+	2650 3000 2650 3350
+Wire Wire Line
+	1450 1900 1700 1900
+Wire Wire Line
+	1450 3400 1600 3400
+Wire Wire Line
+	1450 3600 1900 3600
+Wire Wire Line
+	5100 2250 5100 2450
+Wire Wire Line
+	5100 2400 5350 2400
+Connection ~ 5100 2400
+Wire Wire Line
+	6050 2900 6050 3100
+Wire Wire Line
+	6050 2150 6050 2500
+Wire Wire Line
+	5650 1550 5650 1650
+Text GLabel 4650 1650 0    60   Input ~ 0
+TX
+$Comp
+L GND-RESCUE-kamstrup #PWR01
+U 1 1 51FBDA50
+P 5100 3100
+F 0 "#PWR01" H 5100 3100 30  0001 C CNN
+F 1 "GND" H 5100 3030 30  0001 C CNN
+F 2 "" H 5100 3100 60  0001 C CNN
+F 3 "" H 5100 3100 60  0001 C CNN
+	1    5100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-kamstrup R4
+U 1 1 52CEFDF5
+P 5650 1900
+F 0 "R4" V 5730 1900 50  0000 C CNN
+F 1 "10k" V 5650 1900 50  0000 C CNN
+F 2 "" H 5650 1900 60  0001 C CNN
+F 3 "" H 5650 1900 60  0001 C CNN
+	1    5650 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-kamstrup R5
+U 1 1 51FBDAB3
+P 6050 1900
+F 0 "R5" V 6130 1900 50  0000 C CNN
+F 1 "10k" V 6050 1900 50  0000 C CNN
+F 2 "" H 6050 1900 60  0001 C CNN
+F 3 "" H 6050 1900 60  0001 C CNN
+	1    6050 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L BC547 Q3
+U 1 1 51FBDAA4
+P 5950 2700
+F 0 "Q3" H 5950 2551 40  0000 R CNN
+F 1 "BC547" H 5950 2850 40  0000 R CNN
+F 2 "TO92" H 5850 2802 29  0000 C CNN
+F 3 "" H 5950 2700 60  0001 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-kamstrup R3
+U 1 1 51FBDA21
+P 5100 2700
+F 0 "R3" V 5180 2700 50  0000 C CNN
+F 1 "15k" V 5100 2700 50  0000 C CNN
+F 2 "" H 5100 2700 60  0001 C CNN
+F 3 "" H 5100 2700 60  0001 C CNN
+	1    5100 2700
+	-1   0    0    1   
+$EndComp
+Text GLabel 1900 3600 2    60   Input ~ 0
+RX
+Text GLabel 1650 3500 2    60   Input ~ 0
+TX
+$Comp
+L GND-RESCUE-kamstrup #PWR05
+U 1 1 51D5D924
+P 1800 3350
+F 0 "#PWR05" H 1800 3350 30  0001 C CNN
+F 1 "GND" H 1800 3280 30  0001 C CNN
+F 2 "" H 1800 3350 60  0001 C CNN
+F 3 "" H 1800 3350 60  0001 C CNN
+	1    1800 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 1900 0    60   Input ~ 0
+TX
+Text GLabel 6350 2350 2    60   Input ~ 0
+RX
+$Comp
+L BC547 Q2
+U 1 1 51D5D736
+P 5550 2400
+F 0 "Q2" H 5550 2251 40  0000 R CNN
+F 1 "BC547" H 5550 2550 40  0000 R CNN
+F 2 "TO92" H 5450 2502 29  0000 C CNN
+F 3 "" H 5550 2400 60  0001 C CNN
+	1    5550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-kamstrup #PWR06
+U 1 1 51D5D72C
+P 6050 3100
+F 0 "#PWR06" H 6050 3100 30  0001 C CNN
+F 1 "GND" H 6050 3030 30  0001 C CNN
+F 2 "" H 6050 3100 60  0001 C CNN
+F 3 "" H 6050 3100 60  0001 C CNN
+	1    6050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-kamstrup R2
+U 1 1 51D5D6E0
+P 2650 2400
+F 0 "R2" V 2730 2400 50  0000 C CNN
+F 1 "220" V 2650 2400 50  0000 C CNN
+F 2 "" H 2650 2400 60  0001 C CNN
+F 3 "" H 2650 2400 60  0001 C CNN
+	1    2650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P1
+U 1 1 51D5D6C3
+P 1100 3450
+F 0 "P1" V 1050 3450 50  0000 C CNN
+F 1 "CONN_4" V 1150 3450 50  0000 C CNN
+F 2 "" H 1100 3450 60  0001 C CNN
+F 3 "" H 1100 3450 60  0001 C CNN
+	1    1100 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L BC557 Q1
+U 1 1 51D5D65F
+P 2550 1900
+F 0 "Q1" H 2550 1751 40  0000 R CNN
+F 1 "BC557" H 2550 2050 40  0000 R CNN
+F 2 "TO92" H 2450 2002 29  0000 C CNN
+F 3 "" H 2550 1900 60  0001 C CNN
+	1    2550 1900
+	1    0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-kamstrup R1
+U 1 1 51D5D637
+P 1950 1900
+F 0 "R1" V 2030 1900 50  0000 C CNN
+F 1 "39k" V 1950 1900 50  0000 C CNN
+F 2 "" H 1950 1900 60  0001 C CNN
+F 3 "" H 1950 1900 60  0001 C CNN
+	1    1950 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-kamstrup #PWR08
+U 1 1 51D5D613
+P 2650 3350
+F 0 "#PWR08" H 2650 3350 30  0001 C CNN
+F 1 "GND" H 2650 3280 30  0001 C CNN
+F 2 "" H 2650 3350 60  0001 C CNN
+F 3 "" H 2650 3350 60  0001 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ALT TXLED1
+U 1 1 59706A67
+P 2650 2850
+F 0 "TXLED1" H 2650 2950 50  0000 C CNN
+F 1 "IR LED" H 2650 2750 50  0000 C CNN
+F 2 "" H 2650 2850 50  0001 C CNN
+F 3 "" H 2650 2850 50  0001 C CNN
+	1    2650 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Photo_ALT RXLED1
+U 1 1 59706C4F
+P 5100 2150
+F 0 "RXLED1" H 5120 2220 50  0000 L CNN
+F 1 "IR PHOTODIODE" H 5060 2040 50  0000 C CNN
+F 2 "" H 5050 2150 50  0001 C CNN
+F 3 "" H 5050 2150 50  0001 C CNN
+	1    5100 2150
+	0    -1   1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59706D36
+P 2650 1500
+F 0 "#PWR?" H 2650 1350 50  0001 C CNN
+F 1 "+5V" H 2650 1640 50  0000 C CNN
+F 2 "" H 2650 1500 50  0001 C CNN
+F 3 "" H 2650 1500 50  0001 C CNN
+	1    2650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59706D6F
+P 1600 3200
+F 0 "#PWR?" H 1600 3050 50  0001 C CNN
+F 1 "+5V" H 1600 3340 50  0000 C CNN
+F 2 "" H 1600 3200 50  0001 C CNN
+F 3 "" H 1600 3200 50  0001 C CNN
+	1    1600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3400 1600 3200
+$Comp
+L +5V #PWR?
+U 1 1 59706DE7
+P 5650 1550
+F 0 "#PWR?" H 5650 1400 50  0001 C CNN
+F 1 "+5V" H 5650 1690 50  0000 C CNN
+F 2 "" H 5650 1550 50  0001 C CNN
+F 3 "" H 5650 1550 50  0001 C CNN
+	1    5650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59706E11
+P 6050 1550
+F 0 "#PWR?" H 6050 1400 50  0001 C CNN
+F 1 "+5V" H 6050 1690 50  0000 C CNN
+F 2 "" H 6050 1550 50  0001 C CNN
+F 3 "" H 6050 1550 50  0001 C CNN
+	1    6050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1650 5100 1650
+Wire Wire Line
+	5100 1650 5100 1950
+$EndSCHEMATC
