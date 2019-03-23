@@ -6,8 +6,8 @@ $Descr User 8268 5827
 encoding utf-8
 Sheet 1 1
 Title "Kamstrup IR-head"
-Date "20 Jul 2017"
-Rev "2"
+Date "2019-03-23"
+Rev "3"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -112,7 +112,8 @@ P 2650 2850
 F 0 "D1" H 2650 2950 50  0000 C CNN
 F 1 "TX" H 2650 2750 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2650 2850 50  0001 C CNN
-F 3 "" H 2650 2850 50  0001 C CNN
+F 3 "http://static6.arrow.com/aropdfconversion/e52aea5d9055317c3ce7432ccd22a4384016af9/3421969660189984apt1608f3c.pdf" H 2650 2850 50  0001 C CNN
+F 4 "APT1608F3C" H 2650 2850 50  0001 C CNN "Type"
 	1    2650 2850
 	0    -1   -1   0   
 $EndComp
@@ -123,7 +124,8 @@ P 5100 2150
 F 0 "D2" H 5120 2220 50  0000 L CNN
 F 1 "RX" H 5060 2040 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5050 2150 50  0001 C CNN
-F 3 "" H 5050 2150 50  0001 C CNN
+F 3 "http://static6.arrow.com/aropdfconversion/2325fc502e23b537918014f6f2d82469c984eab0/401index.phptrollerattachmentid_attachment820.phptrollerattach.pdf" H 5050 2150 50  0001 C CNN
+F 4 "EAPST1608A0" H 5100 2150 50  0001 C CNN "Type"
 	1    5100 2150
 	0    -1   1    0   
 $EndComp
@@ -186,7 +188,8 @@ P 2550 1900
 F 0 "Q1" H 2741 1946 50  0000 L CNN
 F 1 "PNP" H 2741 1855 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2750 2000 50  0001 C CNN
-F 3 "~" H 2550 1900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/MMBT3906.pdf" H 2550 1900 50  0001 C CNN
+F 4 "MMBT3906" H 2550 1900 50  0001 C CNN "Type"
 	1    2550 1900
 	1    0    0    -1  
 $EndComp
@@ -197,7 +200,8 @@ P 5550 2400
 F 0 "Q2" H 5741 2446 50  0000 L CNN
 F 1 "NPN" H 5741 2355 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5750 2500 50  0001 C CNN
-F 3 "~" H 5550 2400 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 5550 2400 50  0001 C CNN
+F 4 "MMBT3904" H 5550 2400 50  0001 C CNN "Type"
 	1    5550 2400
 	1    0    0    -1  
 $EndComp
@@ -208,7 +212,8 @@ P 5950 2700
 F 0 "Q3" H 6141 2746 50  0000 L CNN
 F 1 "NPN" H 6141 2655 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 2800 50  0001 C CNN
-F 3 "~" H 5950 2700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 5950 2700 50  0001 C CNN
+F 4 "MMBT3904" H 5950 2700 50  0001 C CNN "Type"
 	1    5950 2700
 	1    0    0    -1  
 $EndComp

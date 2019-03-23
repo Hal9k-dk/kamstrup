@@ -16,37 +16,19 @@ Comment4 ""
 $EndDescr
 Text Notes 3900 1500 0    60   ~ 0
 Echo cancellation:\nTX is high when inactive,\nso only let the LED \nreceive when TX is high.
-Wire Wire Line
-	5650 2150 5650 2200
 Connection ~ 6050 2350
 Wire Wire Line
 	6050 2350 6350 2350
-Wire Wire Line
-	6050 1550 6050 1650
 Wire Wire Line
 	5750 2700 5650 2700
 Wire Wire Line
 	5650 2700 5650 2600
 Wire Wire Line
-	5100 2950 5100 3100
-Wire Wire Line
 	1650 3500 1450 3500
-Wire Wire Line
-	1800 3350 1800 3300
-Wire Wire Line
-	1800 3300 1450 3300
-Wire Wire Line
-	2650 2650 2650 2700
-Wire Wire Line
-	2350 1900 2200 1900
 Wire Wire Line
 	2650 1700 2650 1500
 Wire Wire Line
-	2650 2150 2650 2100
-Wire Wire Line
 	2650 3000 2650 3350
-Wire Wire Line
-	1450 1900 1700 1900
 Wire Wire Line
 	1450 3400 1600 3400
 Wire Wire Line
@@ -58,25 +40,10 @@ Wire Wire Line
 Connection ~ 5100 2400
 Wire Wire Line
 	6050 2900 6050 3100
-Wire Wire Line
-	6050 2150 6050 2350
-Wire Wire Line
-	5650 1550 5650 1650
 Text GLabel 4650 1650 0    60   Input ~ 0
 TX
 $Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR01
-U 1 1 51FBDA50
-P 5100 3100
-F 0 "#PWR01" H 5100 3100 30  0001 C CNN
-F 1 "GND" H 5100 3030 30  0001 C CNN
-F 2 "" H 5100 3100 60  0001 C CNN
-F 3 "" H 5100 3100 60  0001 C CNN
-	1    5100 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R4
+L Device:R R4
 U 1 1 52CEFDF5
 P 5650 1900
 F 0 "R4" V 5730 1900 50  0000 C CNN
@@ -87,7 +54,7 @@ F 3 "" H 5650 1900 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R5
+L Device:R R5
 U 1 1 51FBDAB3
 P 6050 1900
 F 0 "R5" V 6130 1900 50  0000 C CNN
@@ -98,7 +65,7 @@ F 3 "" H 6050 1900 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R3
+L Device:R R3
 U 1 1 51FBDA21
 P 5100 2700
 F 0 "R3" V 5180 2700 50  0000 C CNN
@@ -112,34 +79,12 @@ Text GLabel 1900 3600 2    60   Input ~ 0
 RX
 Text GLabel 1650 3500 2    60   Input ~ 0
 TX
-$Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR05
-U 1 1 51D5D924
-P 1800 3350
-F 0 "#PWR05" H 1800 3350 30  0001 C CNN
-F 1 "GND" H 1800 3280 30  0001 C CNN
-F 2 "" H 1800 3350 60  0001 C CNN
-F 3 "" H 1800 3350 60  0001 C CNN
-	1    1800 3350
-	1    0    0    -1  
-$EndComp
 Text GLabel 1450 1900 0    60   Input ~ 0
 TX
 Text GLabel 6350 2350 2    60   Input ~ 0
 RX
 $Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR06
-U 1 1 51D5D72C
-P 6050 3100
-F 0 "#PWR06" H 6050 3100 30  0001 C CNN
-F 1 "GND" H 6050 3030 30  0001 C CNN
-F 2 "" H 6050 3100 60  0001 C CNN
-F 3 "" H 6050 3100 60  0001 C CNN
-	1    6050 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R2
+L Device:R R2
 U 1 1 51D5D6E0
 P 2650 2400
 F 0 "R2" V 2730 2400 50  0000 C CNN
@@ -150,7 +95,7 @@ F 3 "" H 2650 2400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R1
+L Device:R R1
 U 1 1 51D5D637
 P 1950 1900
 F 0 "R1" V 2030 1900 50  0000 C CNN
@@ -161,24 +106,14 @@ F 3 "" H 1950 1900 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR08
-U 1 1 51D5D613
-P 2650 3350
-F 0 "#PWR08" H 2650 3350 30  0001 C CNN
-F 1 "GND" H 2650 3280 30  0001 C CNN
-F 2 "" H 2650 3350 60  0001 C CNN
-F 3 "" H 2650 3350 60  0001 C CNN
-	1    2650 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED_ALT D1
 U 1 1 59706A67
 P 2650 2850
 F 0 "D1" H 2650 2950 50  0000 C CNN
 F 1 "TX" H 2650 2750 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2650 2850 50  0001 C CNN
-F 3 "" H 2650 2850 50  0001 C CNN
+F 3 "http://static6.arrow.com/aropdfconversion/e52aea5d9055317c3ce7432ccd22a4384016af9/3421969660189984apt1608f3c.pdf" H 2650 2850 50  0001 C CNN
+F 4 "APT1608F3C" H 2650 2850 50  0001 C CNN "Type"
 	1    2650 2850
 	0    -1   -1   0   
 $EndComp
@@ -189,7 +124,8 @@ P 5100 2150
 F 0 "D2" H 5120 2220 50  0000 L CNN
 F 1 "RX" H 5060 2040 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5050 2150 50  0001 C CNN
-F 3 "" H 5050 2150 50  0001 C CNN
+F 3 "http://static6.arrow.com/aropdfconversion/2325fc502e23b537918014f6f2d82469c984eab0/401index.phptrollerattachmentid_attachment820.phptrollerattach.pdf" H 5050 2150 50  0001 C CNN
+F 4 "EAPST1608A0" H 5100 2150 50  0001 C CNN "Type"
 	1    5100 2150
 	0    -1   1    0   
 $EndComp
@@ -245,8 +181,6 @@ Wire Wire Line
 	5100 1650 5100 1950
 Wire Wire Line
 	6050 2350 6050 2500
-Wire Wire Line
-	5100 2400 5100 2450
 $Comp
 L Device:Q_PNP_BEC Q1
 U 1 1 5C8CDC16
@@ -254,7 +188,8 @@ P 2550 1900
 F 0 "Q1" H 2741 1946 50  0000 L CNN
 F 1 "PNP" H 2741 1855 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2750 2000 50  0001 C CNN
-F 3 "~" H 2550 1900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/MMBT3906.pdf" H 2550 1900 50  0001 C CNN
+F 4 "MMBT3906" H 2550 1900 50  0001 C CNN "Type"
 	1    2550 1900
 	1    0    0    -1  
 $EndComp
@@ -265,7 +200,8 @@ P 5550 2400
 F 0 "Q2" H 5741 2446 50  0000 L CNN
 F 1 "NPN" H 5741 2355 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5750 2500 50  0001 C CNN
-F 3 "~" H 5550 2400 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 5550 2400 50  0001 C CNN
+F 4 "MMBT3904" H 5550 2400 50  0001 C CNN "Type"
 	1    5550 2400
 	1    0    0    -1  
 $EndComp
@@ -276,7 +212,8 @@ P 5950 2700
 F 0 "Q3" H 6141 2746 50  0000 L CNN
 F 1 "NPN" H 6141 2655 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 2800 50  0001 C CNN
-F 3 "~" H 5950 2700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 5950 2700 50  0001 C CNN
+F 4 "MMBT3904" H 5950 2700 50  0001 C CNN "Type"
 	1    5950 2700
 	1    0    0    -1  
 $EndComp
@@ -350,4 +287,70 @@ Text Notes 4950 2600 1    60   ~ 0
 IR Phototransistor
 Text Notes 2500 3000 1    60   ~ 0
 IR led
+Wire Wire Line
+	2100 1900 2350 1900
+Wire Wire Line
+	1450 1900 1800 1900
+Wire Wire Line
+	2650 2550 2650 2700
+Wire Wire Line
+	2650 2100 2650 2250
+Wire Wire Line
+	6050 2050 6050 2350
+Wire Wire Line
+	5650 2050 5650 2200
+Wire Wire Line
+	5650 1550 5650 1750
+Wire Wire Line
+	6050 1550 6050 1750
+Wire Wire Line
+	5100 2400 5100 2550
+Wire Wire Line
+	5100 2850 5100 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5C968C45
+P 2050 3300
+F 0 "#PWR?" H 2050 3050 50  0001 C CNN
+F 1 "GND" H 2055 3127 50  0000 C CNN
+F 2 "" H 2050 3300 50  0001 C CNN
+F 3 "" H 2050 3300 50  0001 C CNN
+	1    2050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C968C97
+P 2650 3350
+F 0 "#PWR?" H 2650 3100 50  0001 C CNN
+F 1 "GND" H 2655 3177 50  0000 C CNN
+F 2 "" H 2650 3350 50  0001 C CNN
+F 3 "" H 2650 3350 50  0001 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C968CC2
+P 5100 3100
+F 0 "#PWR?" H 5100 2850 50  0001 C CNN
+F 1 "GND" H 5105 2927 50  0000 C CNN
+F 2 "" H 5100 3100 50  0001 C CNN
+F 3 "" H 5100 3100 50  0001 C CNN
+	1    5100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C968D2D
+P 6050 3100
+F 0 "#PWR?" H 6050 2850 50  0001 C CNN
+F 1 "GND" H 6055 2927 50  0000 C CNN
+F 2 "" H 6050 3100 50  0001 C CNN
+F 3 "" H 6050 3100 50  0001 C CNN
+	1    6050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3300 2050 3300
 $EndSCHEMATC
