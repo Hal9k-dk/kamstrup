@@ -1,158 +1,239 @@
-# EESchema Netlist Version 1.1 created  tor 16 jan 2014 21:03:49 CET
-(
- ( /52CEFDF5 $noname  R4 10k {Lib=R}
-  (    1 N-000002 )
-  (    2 +3.3V )
- )
- ( /51FBDAB3 $noname  R5 10k {Lib=R}
-  (    1 RX )
-  (    2 +3.3V )
- )
- ( /51FBDAA4 TO92  Q3 BC547 {Lib=BC547}
-  (    1 RX )
-  (    2 N-000001 )
-  (    3 GND )
- )
- ( /51FBDA21 $noname  R3 15k {Lib=R}
-  (    1 GND )
-  (    2 N-000010 )
- )
- ( /51D5D736 TO92  Q2 BC547 {Lib=BC547}
-  (    1 N-000002 )
-  (    2 N-000010 )
-  (    3 N-000001 )
- )
- ( /51D5D727 $noname  RXLED1 LED {Lib=LED}
-  (    1 N-000010 )
-  (    2 TX )
- )
- ( /51D5D6F4 $noname  TXLED1 LED {Lib=LED}
-  (    1 N-000008 )
-  (    2 GND )
- )
- ( /51D5D6E0 $noname  R2 220 {Lib=R}
-  (    1 N-000007 )
-  (    2 N-000008 )
- )
- ( /51D5D6C3 $noname  P1 CONN_4 {Lib=CONN_4}
-  (    1 RX )
-  (    2 TX )
-  (    3 +3.3V )
-  (    4 GND )
- )
- ( /51D5D65F TO92  Q1 BC557 {Lib=BC557}
-  (    1 N-000007 )
-  (    2 N-000005 )
-  (    3 +3.3V )
- )
- ( /51D5D637 $noname  R1 39k {Lib=R}
-  (    1 TX )
-  (    2 N-000005 )
- )
-)
-*
-{ Allowed footprints by component:
-$component R4
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R5
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component Q3
- TO92*
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component Q2
- TO92*
-$endlist
-$component RXLED1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component TXLED1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component Q1
- TO92*
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$endfootprintlist
-}
-{ Pin List by Nets
-Net 1 "" ""
- Q3 2
- Q2 3
-Net 2 "" ""
- R4 1
- Q2 1
-Net 3 "GND" "GND"
- TXLED1 2
- P1 4
- Q3 3
- R3 1
-Net 4 "TX" "TX"
- R1 1
- RXLED1 2
- P1 2
-Net 5 "" ""
- Q1 2
- R1 2
-Net 6 "+3.3V" "+3.3V"
- R5 2
- R4 2
- P1 3
- Q1 3
-Net 7 "" ""
- Q1 1
- R2 1
-Net 8 "" ""
- R2 2
- TXLED1 1
-Net 9 "RX" "RX"
- Q3 1
- P1 1
- R5 1
-Net 10 "" ""
- R3 2
- Q2 2
- RXLED1 1
-}
-#End
+(export (version D)
+  (design
+    (source C:\Users\Ander\Documents\GitHub\kamstrup\pcb\kamstrup.sch)
+    (date "23-03-2019 17:48:24")
+    (tool "Eeschema (5.0.1)-4")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title "Kamstrup IR-head")
+        (company)
+        (rev 2)
+        (date "20 Jul 2017")
+        (source kamstrup.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref R4)
+      (value 10k)
+      (footprint Resistor_SMD:R_0603_1608Metric)
+      (libsource (lib Device) (part R) (description Resistor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 52CEFDF5))
+    (comp (ref R5)
+      (value 10k)
+      (footprint Resistor_SMD:R_0603_1608Metric)
+      (libsource (lib Device) (part R) (description Resistor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51FBDAB3))
+    (comp (ref R3)
+      (value 15k)
+      (footprint Resistor_SMD:R_0603_1608Metric)
+      (libsource (lib Device) (part R) (description Resistor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51FBDA21))
+    (comp (ref R2)
+      (value 220)
+      (footprint Resistor_SMD:R_0603_1608Metric)
+      (libsource (lib Device) (part R) (description Resistor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51D5D6E0))
+    (comp (ref R1)
+      (value 39k)
+      (footprint Resistor_SMD:R_0603_1608Metric)
+      (libsource (lib Device) (part R) (description Resistor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51D5D637))
+    (comp (ref D1)
+      (value TX)
+      (footprint LED_SMD:LED_0603_1608Metric)
+      (libsource (lib Device) (part LED_ALT) (description "Light emitting diode, filled shape"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 59706A67))
+    (comp (ref D2)
+      (value RX)
+      (footprint LED_SMD:LED_0603_1608Metric)
+      (libsource (lib Device) (part D_Photo_ALT) (description "Photodiode, filled shape"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 59706C4F))
+    (comp (ref Q1)
+      (value PNP)
+      (footprint Package_TO_SOT_SMD:SOT-23)
+      (datasheet ~)
+      (libsource (lib Device) (part Q_PNP_BEC) (description "PNP transistor, base/emitter/collector"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C8CDC16))
+    (comp (ref Q2)
+      (value NPN)
+      (footprint Package_TO_SOT_SMD:SOT-23)
+      (datasheet ~)
+      (libsource (lib Device) (part Q_NPN_BEC) (description "NPN transistor, base/emitter/collector"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C8CDE9E))
+    (comp (ref Q3)
+      (value NPN)
+      (footprint Package_TO_SOT_SMD:SOT-23)
+      (datasheet ~)
+      (libsource (lib Device) (part Q_NPN_BEC) (description "NPN transistor, base/emitter/collector"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C8CDF18))
+    (comp (ref H1)
+      (value MountingHole)
+      (footprint MountingHole:MountingHole_2.2mm_M2)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole) (description "Mounting Hole without connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C93F3AA))
+    (comp (ref H2)
+      (value MountingHole)
+      (footprint MountingHole:MountingHole_2.2mm_M2)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole) (description "Mounting Hole without connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C93F4E8))
+    (comp (ref J1)
+      (value GND)
+      (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
+      (datasheet ~)
+      (libsource (lib Connector_Generic) (part Conn_01x01) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C93FBE8))
+    (comp (ref J2)
+      (value 5V)
+      (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
+      (datasheet ~)
+      (libsource (lib Connector_Generic) (part Conn_01x01) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C93FC78))
+    (comp (ref J3)
+      (value TX)
+      (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
+      (datasheet ~)
+      (libsource (lib Connector_Generic) (part Conn_01x01) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C93FCA4))
+    (comp (ref J4)
+      (value RX)
+      (footprint TestPoint:TestPoint_Pad_1.5x1.5mm)
+      (datasheet ~)
+      (libsource (lib Connector_Generic) (part Conn_01x01) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C93FCD2)))
+  (libparts
+    (libpart (lib Connector_Generic) (part Conn_01x01)
+      (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)")
+      (docs ~)
+      (footprints
+        (fp Connector*:*))
+      (fields
+        (field (name Reference) J)
+        (field (name Value) Conn_01x01))
+      (pins
+        (pin (num 1) (name Pin_1) (type passive))))
+    (libpart (lib Device) (part D_Photo_ALT)
+      (description "Photodiode, filled shape")
+      (docs ~)
+      (fields
+        (field (name Reference) D)
+        (field (name Value) D_Photo_ALT))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib Device) (part LED_ALT)
+      (description "Light emitting diode, filled shape")
+      (docs ~)
+      (footprints
+        (fp LED*)
+        (fp LED_SMD:*)
+        (fp LED_THT:*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED_ALT))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib Device) (part Q_NPN_BEC)
+      (description "NPN transistor, base/emitter/collector")
+      (docs ~)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) Q_NPN_BEC))
+      (pins
+        (pin (num 1) (name B) (type input))
+        (pin (num 2) (name E) (type passive))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib Device) (part Q_PNP_BEC)
+      (description "PNP transistor, base/emitter/collector")
+      (docs ~)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) Q_PNP_BEC))
+      (pins
+        (pin (num 1) (name B) (type input))
+        (pin (num 2) (name E) (type passive))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib Device) (part R)
+      (description Resistor)
+      (docs ~)
+      (footprints
+        (fp R_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib Mechanical) (part MountingHole)
+      (description "Mounting Hole without connection")
+      (docs ~)
+      (footprints
+        (fp MountingHole*))
+      (fields
+        (field (name Reference) H)
+        (field (name Value) MountingHole))))
+  (libraries
+    (library (logical Connector_Generic)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector_Generic.lib"))
+    (library (logical Device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
+    (library (logical Mechanical)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib")))
+  (nets
+    (net (code 1) (name RX)
+      (node (ref J4) (pin 1))
+      (node (ref R5) (pin 1))
+      (node (ref Q3) (pin 3)))
+    (net (code 2) (name "Net-(Q2-Pad3)")
+      (node (ref R4) (pin 1))
+      (node (ref Q2) (pin 3)))
+    (net (code 3) (name "Net-(Q2-Pad2)")
+      (node (ref Q2) (pin 2))
+      (node (ref Q3) (pin 1)))
+    (net (code 4) (name "Net-(Q1-Pad1)")
+      (node (ref R1) (pin 2))
+      (node (ref Q1) (pin 1)))
+    (net (code 5) (name "Net-(Q1-Pad2)")
+      (node (ref R2) (pin 1))
+      (node (ref Q1) (pin 2)))
+    (net (code 6) (name TX)
+      (node (ref R1) (pin 1))
+      (node (ref D2) (pin 1))
+      (node (ref J3) (pin 1)))
+    (net (code 7) (name +5V)
+      (node (ref J2) (pin 1))
+      (node (ref R4) (pin 2))
+      (node (ref R5) (pin 2))
+      (node (ref Q1) (pin 3)))
+    (net (code 8) (name GND)
+      (node (ref Q3) (pin 2))
+      (node (ref D1) (pin 1))
+      (node (ref J1) (pin 1))
+      (node (ref R3) (pin 1)))
+    (net (code 9) (name "Net-(D2-Pad2)")
+      (node (ref D2) (pin 2))
+      (node (ref R3) (pin 2))
+      (node (ref Q2) (pin 1)))
+    (net (code 10) (name "Net-(D1-Pad2)")
+      (node (ref D1) (pin 2))
+      (node (ref R2) (pin 2)))))

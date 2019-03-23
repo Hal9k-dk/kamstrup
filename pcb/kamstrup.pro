@@ -1,4 +1,4 @@
-update=16-03-2019 12:00:35
+update=23-03-2019 17:20:00
 version=1
 last_client=kicad
 [cvpcb]
@@ -24,11 +24,11 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=kamstrup_smd.net
-PadDrill=0.8128
-PadDrillOvalY=0.8128
-PadSizeH=1.524
-PadSizeV=1.524
+LastNetListRead=kamstrup.net
+PadDrill=0
+PadDrillOvalY=0
+PadSizeH=1.5
+PadSizeV=1.5
 PcbTextSizeV=2.032
 PcbTextSizeH=1.524
 PcbTextThickness=0.3048
@@ -37,6 +37,6 @@ ModuleTextSizeH=1.524
 ModuleTextSizeThickness=0.3048
 SolderMaskClearance=0.254
 SolderMaskMinWidth=0.25
-DrawSegmentWidth=0.381
-BoardOutlineThickness=0.381
+DrawSegmentWidth=0.2
+BoardOutlineThickness=0.2
 ModuleOutlineThickness=0.381

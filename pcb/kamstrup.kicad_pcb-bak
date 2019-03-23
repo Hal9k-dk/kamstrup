@@ -38,7 +38,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.2)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
     (user_trace_width 0.6)
@@ -745,14 +745,14 @@
   (segment (start 48.6 48.75) (end 45.95 48.75) (width 0.4) (layer Front) (net 8))
   (segment (start 51.25 46.95) (end 50.4 46.95) (width 0.4) (layer Front) (net 8))
   (segment (start 50.4 46.95) (end 48.6 48.75) (width 0.4) (layer Front) (net 8))
+  (segment (start 42.2875 42.75) (end 42.5 42.5375) (width 0.4) (layer Front) (net 9))
+  (segment (start 42.2875 45) (end 42.2875 42.75) (width 0.4) (layer Front) (net 9))
   (segment (start 51.2 45) (end 51.25 45.05) (width 0.4) (layer Front) (net 10))
   (segment (start 50.4625 44.9625) (end 50.5 45) (width 0.4) (layer Front) (net 10))
   (segment (start 49.2875 45) (end 50.5 45) (width 0.4) (layer Front) (net 10))
   (segment (start 50.5 45) (end 51.2 45) (width 0.4) (layer Front) (net 10))
   (segment (start 51.2125 45.0125) (end 51.25 45.05) (width 0.4) (layer Front) (net 10))
   (segment (start 51.2125 43.25) (end 51.2125 45.0125) (width 0.4) (layer Front) (net 10))
-  (segment (start 42.2875 42.75) (end 42.5 42.5375) (width 0.4) (layer Front) (net 9))
-  (segment (start 42.2875 45) (end 42.2875 42.75) (width 0.4) (layer Front) (net 9))
 
   (zone (net 1) (net_name GND) (layer Back) (tstamp 0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
@@ -760,7 +760,7 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 31.625 31.75) (xy 31.5 58.25) (xy 58.25 58.25) (xy 58.375 31.75)
+        (xy 31.75 37) (xy 31.75 53) (xy 58.25 53) (xy 58.25 37)
       )
     )
     (filled_polygon

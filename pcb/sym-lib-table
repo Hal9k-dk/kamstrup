@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name kamstrup-rescue)(type Legacy)(uri ${KIPRJMOD}/kamstrup-rescue.lib)(options "")(descr ""))
-)

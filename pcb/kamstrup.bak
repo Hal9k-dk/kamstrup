@@ -65,7 +65,7 @@ Wire Wire Line
 Text GLabel 4650 1650 0    60   Input ~ 0
 TX
 $Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup #PWR01
+L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR01
 U 1 1 51FBDA50
 P 5100 3100
 F 0 "#PWR01" H 5100 3100 30  0001 C CNN
@@ -76,7 +76,7 @@ F 3 "" H 5100 3100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup R4
+L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R4
 U 1 1 52CEFDF5
 P 5650 1900
 F 0 "R4" V 5730 1900 50  0000 C CNN
@@ -87,7 +87,7 @@ F 3 "" H 5650 1900 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup R5
+L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R5
 U 1 1 51FBDAB3
 P 6050 1900
 F 0 "R5" V 6130 1900 50  0000 C CNN
@@ -98,7 +98,7 @@ F 3 "" H 6050 1900 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup R3
+L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R3
 U 1 1 51FBDA21
 P 5100 2700
 F 0 "R3" V 5180 2700 50  0000 C CNN
@@ -113,7 +113,7 @@ RX
 Text GLabel 1650 3500 2    60   Input ~ 0
 TX
 $Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup #PWR05
+L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR05
 U 1 1 51D5D924
 P 1800 3350
 F 0 "#PWR05" H 1800 3350 30  0001 C CNN
@@ -128,7 +128,7 @@ TX
 Text GLabel 6350 2350 2    60   Input ~ 0
 RX
 $Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup #PWR06
+L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR06
 U 1 1 51D5D72C
 P 6050 3100
 F 0 "#PWR06" H 6050 3100 30  0001 C CNN
@@ -139,7 +139,7 @@ F 3 "" H 6050 3100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup R2
+L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R2
 U 1 1 51D5D6E0
 P 2650 2400
 F 0 "R2" V 2730 2400 50  0000 C CNN
@@ -150,7 +150,7 @@ F 3 "" H 2650 2400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kamstrup-rescue:R-RESCUE-kamstrup R1
+L kamstrup-rescue:R-RESCUE-kamstrup-kamstrup-rescue R1
 U 1 1 51D5D637
 P 1950 1900
 F 0 "R1" V 2030 1900 50  0000 C CNN
@@ -161,7 +161,7 @@ F 3 "" H 1950 1900 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kamstrup-rescue:GND-RESCUE-kamstrup #PWR08
+L kamstrup-rescue:GND-RESCUE-kamstrup-kamstrup-rescue #PWR08
 U 1 1 51D5D613
 P 2650 3350
 F 0 "#PWR08" H 2650 3350 30  0001 C CNN
@@ -172,22 +172,22 @@ F 3 "" H 2650 3350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_ALT TXLED1
+L Device:LED_ALT D1
 U 1 1 59706A67
 P 2650 2850
-F 0 "TXLED1" H 2650 2950 50  0000 C CNN
-F 1 "IR LED" H 2650 2750 50  0000 C CNN
+F 0 "D1" H 2650 2950 50  0000 C CNN
+F 1 "TX" H 2650 2750 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2650 2850 50  0001 C CNN
 F 3 "" H 2650 2850 50  0001 C CNN
 	1    2650 2850
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Photo_ALT RXLED1
+L Device:D_Photo_ALT D2
 U 1 1 59706C4F
 P 5100 2150
-F 0 "RXLED1" H 5120 2220 50  0000 L CNN
-F 1 "IR PHOTODIODE" H 5060 2040 50  0000 C CNN
+F 0 "D2" H 5120 2220 50  0000 L CNN
+F 1 "RX" H 5060 2040 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5050 2150 50  0001 C CNN
 F 3 "" H 5050 2150 50  0001 C CNN
 	1    5100 2150
@@ -346,4 +346,8 @@ F 3 "~" H 1250 3600 50  0001 C CNN
 	1    1250 3600
 	-1   0    0    1   
 $EndComp
+Text Notes 4950 2600 1    60   ~ 0
+IR Phototransistor
+Text Notes 2500 3000 1    60   ~ 0
+IR led
 $EndSCHEMATC
