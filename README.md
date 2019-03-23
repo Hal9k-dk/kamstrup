@@ -1,4 +1,4 @@
 # kamstrup
-Kamstrup IR-øje
+Kamstrup IR-øje SMD version
 
 Se http://wiki.hal9k.dk/projects/kamstrup for flere oplysninger.
